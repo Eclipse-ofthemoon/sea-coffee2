@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Fira Mono&display=swap');
+
+
+body {
+    font-family: Fira Mono, serif;
+    background: linear-gradient(90deg, #ffffffcb 0%, #fafafa 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+    color: rgb(143, 142, 142);;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color:rgb(143, 142, 142);;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.blog {
+    height: 130px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pricing {
+    height: 70px;
+}
+
+.nav-link {
+    color:rgb(143, 142, 142);
+}
+
+.navbar-nav .nav-link.active {
+    color:rgb(143, 142, 142);
+
+}
+
+.navbar-brand img {
+    width: 45px;
+}
+
+.navbar-toggler {
+    background-color: rgb(0, 0, 0);
+}
+
+.sidebar {
+    color:black;
+    background: linear-gradient(270deg, #9f9ffe 0%, #ffffff 100%);
+
+}
+
+.card {
+    background: linear-gradient(270deg, #bef0f5 0%, #79c0fb 100%);
+    color: rgb(0, 0, 0);
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.btn-primary {
+    color: #9f9ffe;
+}
+
+.slide-text,
+.footer-text {
+    color: black;
+    margin: auto auto;
+}
+
+footer,
+.btn-outline-primary {
+    background: linear-gradient(270deg, #9f9ffe 0%, #68bbff 100%);
+}
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
 }
