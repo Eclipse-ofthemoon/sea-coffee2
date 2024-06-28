@@ -1,51 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import './bgvideo.css';
 
 function App() {
 
-  return (
-    <div>
-  <header>
-    <nav className="navbar navbar-expand-lg bg-light">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="index.html"><img src="sourse/files/Untitled.png" alt="Кофейня у моря" /></a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+return (
+ <div>
+  <div className='nav'>
+    <header>
+      <nav className="navbar navbar-expand-lg bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="index.html"><img src={require('./images/Untitled.png')} alt="Кофейня у моря" /></a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="index.html">О кофейне</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="pricing.html">Магазин</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="tel:+79233647942">Контакты</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="blog.html">Блог</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="https://youtu.be/-z6ocWvtHqY?si=HcDZ_Hq916KoNAD3">
-                <img style={{'width': '35px', 'margin-inline': '1em'}} src="sourse/files/yt.png" alt="..." />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="https://t.me/morecoffee_to_go">
-                <img style={{'width': '25px', 'margin-inline': '1em'}} src="sourse/files/tg.png" alt="..." />
-              </a>
-            </li>
-          </ul>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="index.html">О кофейне</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="pricing.html">Магазин</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="tel:+79233647942">Контакты</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="blog.html">Блог</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="https://youtu.be/-z6ocWvtHqY?si=HcDZ_Hq916KoNAD3">
+                  <img style={{'width': '35px', 'margin-inline': '1em'}} src={require('./images/yt.png')} alt="..." />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="https://t.me/morecoffee_to_go">
+                  <img style={{'width': '25px', 'margin-inline': '1em'}} src={require('./images/tg.png')} alt="..." />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-
+      </nav>
+    </header>
+    </div>
   <section>
     <div className="bgvideo">
-      <video src="sourse/files/video-bg.mp4" type="video/mp4" autoplay muted loop></video>
+      <video src={require('./files/video-bg.mp4')} type="video/mp4" autoplay muted loop></video>
       <div className="effect"></div>
       <div className="video-text">
         <h1>Кофе и море</h1>
@@ -87,7 +88,7 @@ function App() {
                   <div className="d-block w-100">
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
-                        <img src="sourse/images/photo.png" className="w-100" alt="..." />
+                        <img src={require('./images/photo.png')} className="w-100" alt="..." />
                       </div>
                       <div className="col-lg-6 col-md-6 slide-text">
                         <p>Sea Coffee – уютная кофейня, где аромат свежесваренного кофе сливается
@@ -102,7 +103,7 @@ function App() {
                   <div className="d-block w-100">
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
-                        <img src="sourse/images/b3b7bc3a56cabd29c03abd84ee4a25b0.png" className="w-100" alt="..." />
+                        <img src={require('./images/b3b7bc3a56cabd29c03abd84ee4a25b0.png')} className="w-100" alt="..." />
                       </div>
                       <div className="col-lg-6 col-md-6 slide-text">
                         <p>Здесь каждый десерт – это настоящее волшебство, сплетенное из морских приключений и нежных
@@ -115,7 +116,7 @@ function App() {
                   <div className="d-block w-100">
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
-                        <img src="sourse/images/2c737bc295b8241e24d45ea90ea85d53.png" className="w-100" alt="..." />
+                        <img src={require('./images/2c737bc295b8241e24d45ea90ea85d53.png')} className="w-100" alt="..." />
                       </div>
                       <div className="col-lg-6 col-md-6 slide-text">
                         <p>Мы хотим, чтобы каждая чашка нашего кофе была плотной, с высокой сладостью, при этом с
@@ -131,7 +132,7 @@ function App() {
                   <div className="d-block w-100">
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
-                        <img src="sourse/images/877def82293689.5d1990951dcef.png" className="w-100" alt="..." />
+                        <img src={require('./images/877def82293689.5d1990951dcef.png')} className="w-100" alt="..." />
                       </div>
                       <div className="col-lg-6 col-md-6 slide-text">
                         <p>В нашей кофейне мы гордимся разнообразием меню, которое удовлетворит вкусы каждого гостя.
@@ -147,7 +148,7 @@ function App() {
                   <div className="d-block w-100">
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
-                        <img src="sourse/images/tsutsvts.png" className="w-100" alt="..." />
+                        <img src={require('./images/tsutsvts.png')} className="w-100" alt="..." />
                       </div>
                       <div className="col-lg-6 col-md-6 slide-text">
                         <p>Наши кофейни расположены по всему побережью Черного моря. Сеть кофеен в Сочи и Краснодаре.
@@ -160,7 +161,7 @@ function App() {
                   <div className="d-block w-100">
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
-                        <img src="sourse/images/d4c0b5dcad997257eec2bc55217d83c8.png" className="w-100" alt="..." />
+                        <img src={require('./images/d4c0b5dcad997257eec2bc55217d83c8.png')} className="w-100" alt="..." />
                       </div>
                       <div className="col-lg-6 col-md-6 slide-text">
                         <p>Вам нужно поработать, но не хотите сидеть в скучном офисе? Приходите в нашу кофейню, где
@@ -195,7 +196,7 @@ function App() {
             </div>
             <div className="col-lg-12 col-md-12 text-center">
               <a href="tel:+79233647942">
-                <img className="call-anim" style={{'width': '40px'}} src="sourse/files/phone.png" alt="..." />
+                <img className="call-anim" style={{'width': '40px'}} src={require('./images/phone.png')} alt="..." />
               </a>
             </div>
           </div>
@@ -235,10 +236,10 @@ function App() {
         </div>
         <div className="col-lg-4 col-md-12 media-links">
           <a className="nav-link" href="https://youtu.be/-z6ocWvtHqY?si=HcDZ_Hq916KoNAD3">
-            <img style={{'width': '40px', 'margin-inline': '1em'}} src="sourse/files/yt.png" alt="..." />
+            <img style={{'width': '40px', 'margin-inline': '1em'}} src={require('./images/yt.png')} alt="..." />
           </a>
           <a className="nav-link" href="https://t.me/morecoffee_to_go">
-            <img style={{'width': '40px', 'margin-inline': '1em'}} src="sourse/files/tg.png" alt="..." />
+            <img style={{'width': '40px', 'margin-inline': '1em'}} src={require('./images/tg.png')} alt="..." />
           </a>
         </div>
       </div>
